@@ -6,7 +6,7 @@
 /*   By: agelloz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/11 17:28:51 by agelloz           #+#    #+#             */
-/*   Updated: 2020/02/13 14:05:32 by agelloz          ###   ########.fr       */
+/*   Updated: 2020/03/07 22:07:24 by myriam           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ static void	print_intro_message(t_vm *vm)
 	while (i < vm->count_players)
 	{
 		ft_printf("* Player %d, weighing %d bytes, \"%s\" (\"%s\") !\n",
-				i + 1, vm->players[i].code_size, vm->players[i].name,
+				-vm->players[i].number, vm->players[i].code_size, vm->players[i].name,
 				vm->players[i].comment);
 		i++;
 	}
